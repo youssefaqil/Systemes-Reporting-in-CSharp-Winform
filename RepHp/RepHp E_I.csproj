@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2292374-EE6E-473D-8EA7-6AF09C61C581}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RepHp</RootNamespace>
+    <AssemblyName>RepHp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\wayvs\Reporting\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>86081A5487B20C76A578C417E95615FA1A3965C8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RepHp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Design">
+      <HintPath>..\..\..\..\..\Desktop\SKIN\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.1.0.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\SKIN\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation">
+      <HintPath>..\..\..\..\..\Desktop\Nouveau dossier\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation.Design">
+      <HintPath>..\..\..\..\..\Desktop\SKIN\DevComponents.Instrumentation.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX">
+      <HintPath>..\..\..\..\..\Desktop\Nouveau dossier\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration.Designer.cs">
+      <DependentUpon>Administration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apropos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apropos.Designer.cs">
+      <DependentUpon>Apropos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Historique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historique.Designer.cs">
+      <DependentUpon>Historique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Incidents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Incidents.Designer.cs">
+      <DependentUpon>Incidents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametrage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametrage.Designer.cs">
+      <DependentUpon>Parametrage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLAN.Designer.cs">
+      <DependentUpon>PLAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plan_Traitement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plan_Traitement.Designer.cs">
+      <DependentUpon>Plan_Traitement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistiques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistiques.Designer.cs">
+      <DependentUpon>Statistiques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Traitement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Traitement.Designer.cs">
+      <DependentUpon>Traitement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Reporting_Hp_StorageFilesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Reporting_Hp_StorageFilesDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Reporting_Hp_StorageFilesDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Reporting_Hp_StorageFilesDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Reporting_Hp_StorageFilesDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Reporting_Hp_StorageFilesDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet5.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administration.resx">
+      <DependentUpon>Administration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apropos.resx">
+      <DependentUpon>Apropos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historique.resx">
+      <DependentUpon>Historique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Incidents.resx">
+      <DependentUpon>Incidents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametrage.resx">
+      <DependentUpon>Parametrage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLAN.resx">
+      <DependentUpon>PLAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plan_Traitement.resx">
+      <DependentUpon>Plan_Traitement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistiques.resx">
+      <DependentUpon>Statistiques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Traitement.resx">
+      <DependentUpon>Traitement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RepHp_TemporaryKey.pfx" />
+    <None Include="_Reporting_Hp_StorageFilesDataSet.xsc">
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Reporting_Hp_StorageFilesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet.xss">
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet1.xsc">
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Reporting_Hp_StorageFilesDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet1.xss">
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet2.xsc">
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Reporting_Hp_StorageFilesDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet2.xss">
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet3.xsc">
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Reporting_Hp_StorageFilesDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet3.xss">
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet4.xsc">
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Reporting_Hp_StorageFilesDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet4.xss">
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet5.xsc">
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Reporting_Hp_StorageFilesDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Reporting_Hp_StorageFilesDataSet5.xss">
+      <DependentUpon>_Reporting_Hp_StorageFilesDataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nouvelle image.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dossier-internet-icone-7719.ico" />
+    <Content Include="expo_booth_business_computers_light_on_md_wht.gif" />
+    <Content Include="images %283%29.jpg" />
+    <Content Include="peer_to_peer_file_transfer_md_wht.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_Reporting_Hp_StorageFilesDataSet1" targetNamespace="http://tempuri.org/_Reporting_Hp_StorageFilesDataSet1.xsd" xmlns:mstns="http://tempuri.org/_Reporting_Hp_StorageFilesDataSet1.xsd" xmlns="http://tempuri.org/_Reporting_Hp_StorageFilesDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Reporting_Hp_StorageFilesConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Reporting_Hp_StorageFilesConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.RepHp.Properties.Settings.GlobalReference.Default.Reporting_Hp_StorageFilesConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FILETYPETableAdapter" GeneratorDataComponentClassName="FILETYPETableAdapter" Name="FILETYPE" UserDataComponentName="FILETYPETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Reporting_Hp_StorageFilesConnectionString (Settings)" DbObjectName="[Reporting-Hp-StorageFiles].dbo.FILETYPE" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Type fichier] FROM dbo.FILETYPE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Type fichier" DataSetColumn="Type fichier" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_Reporting_Hp_StorageFilesDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_Reporting_Hp_StorageFilesDataSet1" msprop:Generator_UserDSName="_Reporting_Hp_StorageFilesDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FILETYPE" msprop:Generator_TableClassName="FILETYPEDataTable" msprop:Generator_TableVarName="tableFILETYPE" msprop:Generator_TablePropName="FILETYPE" msprop:Generator_RowDeletingName="FILETYPERowDeleting" msprop:Generator_RowChangingName="FILETYPERowChanging" msprop:Generator_RowEvHandlerName="FILETYPERowChangeEventHandler" msprop:Generator_RowDeletedName="FILETYPERowDeleted" msprop:Generator_UserTableName="FILETYPE" msprop:Generator_RowChangedName="FILETYPERowChanged" msprop:Generator_RowEvArgName="FILETYPERowChangeEvent" msprop:Generator_RowClassName="FILETYPERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type_x0020_fichier" msprop:Generator_ColumnVarNameInTable="columnType_fichier" msprop:Generator_ColumnPropNameInRow="Type_fichier" msprop:Generator_ColumnPropNameInTable="Type_fichierColumn" msprop:Generator_UserColumnName="Type fichier" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

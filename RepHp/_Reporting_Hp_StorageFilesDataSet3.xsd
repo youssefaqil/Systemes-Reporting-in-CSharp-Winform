@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_Reporting_Hp_StorageFilesDataSet3" targetNamespace="http://tempuri.org/_Reporting_Hp_StorageFilesDataSet3.xsd" xmlns:mstns="http://tempuri.org/_Reporting_Hp_StorageFilesDataSet3.xsd" xmlns="http://tempuri.org/_Reporting_Hp_StorageFilesDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Reporting_Hp_StorageFilesConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Reporting_Hp_StorageFilesConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.RepHp.Properties.Settings.GlobalReference.Default.Reporting_Hp_StorageFilesConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Stat_HPTableAdapter" GeneratorDataComponentClassName="Stat_HPTableAdapter" Name="Stat_HP" UserDataComponentName="Stat_HPTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Reporting_Hp_StorageFilesConnectionString (Settings)" DbObjectName="[Reporting-Hp-StorageFiles].dbo.Stat_HP" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Numero_Etat_HP, Temps_Excution_Hours, Temps_Execution_Minutes, Temps_Execution_Secondes FROM dbo.Stat_HP</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Numero_Etat_HP" DataSetColumn="Numero_Etat_HP" />
+              <Mapping SourceColumn="Temps_Excution_Hours" DataSetColumn="Temps_Excution_Hours" />
+              <Mapping SourceColumn="Temps_Execution_Minutes" DataSetColumn="Temps_Execution_Minutes" />
+              <Mapping SourceColumn="Temps_Execution_Secondes" DataSetColumn="Temps_Execution_Secondes" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_Reporting_Hp_StorageFilesDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_Reporting_Hp_StorageFilesDataSet3" msprop:Generator_UserDSName="_Reporting_Hp_StorageFilesDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Stat_HP" msprop:Generator_TableClassName="Stat_HPDataTable" msprop:Generator_TableVarName="tableStat_HP" msprop:Generator_TablePropName="Stat_HP" msprop:Generator_RowDeletingName="Stat_HPRowDeleting" msprop:Generator_RowChangingName="Stat_HPRowChanging" msprop:Generator_RowEvHandlerName="Stat_HPRowChangeEventHandler" msprop:Generator_RowDeletedName="Stat_HPRowDeleted" msprop:Generator_UserTableName="Stat_HP" msprop:Generator_RowChangedName="Stat_HPRowChanged" msprop:Generator_RowEvArgName="Stat_HPRowChangeEvent" msprop:Generator_RowClassName="Stat_HPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Numero_Etat_HP" msprop:Generator_ColumnVarNameInTable="columnNumero_Etat_HP" msprop:Generator_ColumnPropNameInRow="Numero_Etat_HP" msprop:Generator_ColumnPropNameInTable="Numero_Etat_HPColumn" msprop:Generator_UserColumnName="Numero_Etat_HP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Temps_Excution_Hours" msprop:Generator_ColumnVarNameInTable="columnTemps_Excution_Hours" msprop:Generator_ColumnPropNameInRow="Temps_Excution_Hours" msprop:Generator_ColumnPropNameInTable="Temps_Excution_HoursColumn" msprop:Generator_UserColumnName="Temps_Excution_Hours" type="xs:int" minOccurs="0" />
+              <xs:element name="Temps_Execution_Minutes" msprop:Generator_ColumnVarNameInTable="columnTemps_Execution_Minutes" msprop:Generator_ColumnPropNameInRow="Temps_Execution_Minutes" msprop:Generator_ColumnPropNameInTable="Temps_Execution_MinutesColumn" msprop:Generator_UserColumnName="Temps_Execution_Minutes" type="xs:int" minOccurs="0" />
+              <xs:element name="Temps_Execution_Secondes" msprop:Generator_ColumnVarNameInTable="columnTemps_Execution_Secondes" msprop:Generator_ColumnPropNameInRow="Temps_Execution_Secondes" msprop:Generator_ColumnPropNameInTable="Temps_Execution_SecondesColumn" msprop:Generator_UserColumnName="Temps_Execution_Secondes" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
